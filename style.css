@@ -1,27 +1,40 @@
-* {
+html {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+*, *::before, *::after {
     background-color: rgb(233, 196, 106);
     font-family: "Open Sans", "PT Sans", Calibri, Tahoma, sans-serif;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-    font-size: 40px;
-    font-weight: 900;
-    text-align: center;
+    text-align: left;
+    border-bottom: #e76f51 solid 4px;
+    padding: 15px 100px;
+    font-size: 80px;
+    background-color: #f4a261;
+    width: auto;
+}
+
+h1.index-title {
+    background-color: #f4a261;
 }
 
 h2 {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 900;
     text-align: center;
 }
 
-div {
-    display: flex;
-    justify-content: center;
-}
 div img {
     height: auto;
     width: 600px;
+    margin: 215px 0px 0 150px;
+    float: left;
 } 
 
 .texto {
@@ -40,7 +53,7 @@ p {
     font-size: 20px;
 }
 
-.pasos {
+ol.pasos {
     font-size: 18px;
     list-style:georgian;
 }
@@ -48,4 +61,64 @@ p {
 div.volver {
     font-size: 15px;
     justify-content: right;
+}
+
+.index-texto {
+    width: auto;
+    float: right;
+    margin: 250px 360px 30px;
+    font-weight: 900;
+}
+
+.index-hr {
+    border: 1px solid black;
+    width: 800px;
+    margin: 1em auto;
+}
+
+.index-list {
+    margin-top: 30px;
+}
+
+ul.index-list li {
+    margin-top: 40px;
+    color: black;
+}
+
+ul.index-list li a {
+    color:black;
+    text-decoration:wavy;
+}
+
+h2.description {
+    margin: 130px 450px 20px;
+    width: auto;
+    float: right;
+}
+
+p.description {
+    float: right;
+    margin: auto 142px 30px;
+    width: 800px;
+}
+
+h2.pasos {
+    margin: 50px;
+}
+
+ol.pasos {
+    padding-left: 30px;
+    padding-right: 5px;
+    margin-bottom: 30px;
+}
+
+ol.pasos li {
+    margin-bottom: 15px;
+}
+
+div.volver a {
+    color:black;
+    text-decoration:wavy;
+    float: right;
+    font-size: 20px;
 }
